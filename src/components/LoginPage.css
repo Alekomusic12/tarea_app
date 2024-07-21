@@ -1,15 +1,15 @@
 /* src/components/LoginPage.css */
 .login-container {
-    background-image: url('../assets/Login.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw; /* Asegura que el ancho también sea del 100% del viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+   background-image: url('../assets/Login.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw; /* Asegura que el ancho también sea del 100% del viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   }
   
   form {
