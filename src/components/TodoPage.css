@@ -1,0 +1,67 @@
+/* src/components/TodoPage.css */
+
+/* Estilo para el contenedor de la página de tareas */
+.todo-page-container {
+    padding: 20px;
+    
+    
+  }
+  
+  /* Estilo para los inputs y botones de formulario */
+  .form-container {
+    background-color: #e0f2f1; /* Color de fondo verde para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .task-input,
+  .theme-input,
+  .user-input,
+  .filter-input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px); /* Ajusta el ancho según sea necesario */
+  }
+  
+  .add-button,
+  .update-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .add-button {
+    background-color: #4caf50; /* Color de fondo para el botón de agregar */
+  }
+  
+  .update-button {
+    background-color: #2196f3; /* Color de fondo para el botón de actualizar */
+  }
+  
+  /* Estilo para la tabla */
+  .todo-table {
+    background-color: #e3f2fd; /* Color de fondo azul para la tabla */
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .todo-table th {
+    background-color: #1e88e5; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 10px;
+  }
+  
+  .todo-table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .todo-table, .todo-table th, .todo-table td {
+    border: 1px solid #ddd;
+  }
+  

@@ -1,5 +1,6 @@
 // src/components/TodoPage.js
 import React, { useState } from 'react';
+import './TodoPage.css'; // Asegúrate de que la ruta sea correcta
 
 const TodoPage = () => {
   const [todos, setTodos] = useState([]);
@@ -55,41 +56,44 @@ const TodoPage = () => {
   const filteredTodos = todos.filter(todo => todo.theme.includes(filter));
 
   return (
-    <div lassName="table-title">
-      <h2 >Agregar Lista de Tareas</h2>
-      <div>
+    <div className="todo-page-container">
+      <h2 className="table-title">Lista de Tareas</h2>
+      <div className="form-container">
         <input 
+          className="task-input" 
           type="text" 
           placeholder="Tarea" 
           value={task} 
           onChange={(e) => setTask(e.target.value)} 
         />
         <input 
+          className="theme-input" 
           type="text" 
           placeholder="Tema" 
           value={theme} 
           onChange={(e) => setTheme(e.target.value)} 
         />
         <input 
+          className="user-input" 
           type="email" 
           placeholder="Usuario Asignado" 
           value={assignedUser} 
           onChange={(e) => setAssignedUser(e.target.value)} 
         />
         {isEditing ? (
-          <button onClick={updateTodo}>Actualizar Tarea </button>
+          <button className="update-button" onClick={updateTodo}>Actualizar Tarea</button>
         ) : (
-          <button onClick={addTodo}>Agregar Tarea</button>
+          <button className="add-button" onClick={addTodo}>Agregar Tarea</button>
         )}
       </div>
       <input 
+        className="filter-input" 
         type="text" 
         placeholder="Filtrar por tema" 
         value={filter} 
         onChange={(e) => setFilter(e.target.value)} 
       />
-      < div lassName="table-title2">
-      <table > 
+      <table className="todo-table">
         <thead>
           <tr>
             <th>#</th>
@@ -126,7 +130,6 @@ const TodoPage = () => {
           ))}
         </tbody>
       </table>
-      </div>
     </div>
   );
 };

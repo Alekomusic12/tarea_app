@@ -1,15 +1,14 @@
+/* src/index.css */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    text-align: center;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-  
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -26,21 +25,17 @@ th, td {
   padding: 10px;
   border: 1px solid rgb(0, 0, 0);
   text-align: center;
-  
 }
 
 th {
   background-color: #dddede;
-  
 }
 
 button {
   cursor: pointer;
   border: none;
   background: none;
-  
 }
-
 
 button:hover {
   color: #dae0e7;
