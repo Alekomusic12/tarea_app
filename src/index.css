@@ -10,6 +10,7 @@ body {
   
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -23,13 +24,14 @@ table {
 
 th, td {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(0, 0, 0);
   text-align: center;
   
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: #dddede;
+  
 }
 
 button {
@@ -41,5 +43,6 @@ button {
 
 
 button:hover {
-  color: #007BFF;
+  color: #dae0e7;
+  background-color: rgb(102, 107, 107);
 }

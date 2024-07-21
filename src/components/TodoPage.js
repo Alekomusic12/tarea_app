@@ -77,7 +77,7 @@ const TodoPage = () => {
           onChange={(e) => setAssignedUser(e.target.value)} 
         />
         {isEditing ? (
-          <button onClick={updateTodo}>Actualizar Tarea</button>
+          <button onClick={updateTodo}>Actualizar Tarea </button>
         ) : (
           <button onClick={addTodo}>Agregar Tarea</button>
         )}
