@@ -52,19 +52,11 @@ const TodoPage = () => {
     setTodos(newTodos);
   };
 
-  // Comentar la función addComment si no se utiliza actualmente
-  // const addComment = (index, comment) => {
-  //   const newTodos = todos.map((todo, i) => 
-  //     i === index ? { ...todo, comments: [...todo.comments, comment] } : todo
-  //   );
-  //   setTodos(newTodos);
-  // };
-
   const filteredTodos = todos.filter(todo => todo.theme.includes(filter));
 
   return (
-    <div>
-      <h2>Todo List</h2>
+    <div lassName="table-title">
+      <h2 >Agregar Lista de Tareas</h2>
       <div>
         <input 
           type="text" 
@@ -96,11 +88,14 @@ const TodoPage = () => {
         value={filter} 
         onChange={(e) => setFilter(e.target.value)} 
       />
-      <table>
+      < div lassName="table-title2">
+      <table > 
         <thead>
           <tr>
             <th>#</th>
             <th>Nombre de la Tarea</th>
+            <th>Tema</th>
+            <th>Usuario Asignado</th>
             <th>Estado</th>
             <th>Editar</th>
             <th>Eliminar</th>
@@ -111,6 +106,8 @@ const TodoPage = () => {
             <tr key={index}>
               <td>{todo.id}</td>
               <td>{todo.task}</td>
+              <td>{todo.theme}</td>
+              <td>{todo.assignedUser}</td>
               <td>
                 <input 
                   type="checkbox" 
@@ -129,6 +126,7 @@ const TodoPage = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };
